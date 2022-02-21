@@ -46,7 +46,7 @@ const newEmployee = {fullName: 'Hayk', salary: 100000}
         </thead>
         <tbody>
           {data?.map((el) => (
-            <tr key={el.id}>
+            <tr style={{cursor: 'pointer'}} key={el.id}>
               <th>{el.id}</th>
               <th onClick={() => router.push(`employee/${el.id}`)}>
                 {el.fullName}
